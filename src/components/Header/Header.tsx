@@ -6,7 +6,7 @@ type HeaderProps = {};
 
 const Header: React.FC<HeaderProps> = () => {
 	return (
-		<div className=' border-2 border-red-500  lg:bg-black'>
+		<div className=' border-2 border-red-500'>
 			<Link
 				href='/'
 				className='flex gap-2'>
@@ -15,7 +15,9 @@ const Header: React.FC<HeaderProps> = () => {
 					alt='logo'
 					width={28}
 					height={28}></Image>
-				<span>LearnLingo</span>
+				<span className='text-gray-900 text-xl not-italic font-medium leading-6 tracking-tighter'>
+					LearnLingo
+				</span>
 			</Link>
 		</div>
 	);
