@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,7 +6,9 @@ type HeaderProps = {};
 
 const Header: React.FC<HeaderProps> = () => {
 	return (
-		<div className=' border-2 border-red-500 flex justify-between items-center py-3 sm:py-5 px-1 sm:px-8 md:px-16  lg:px-32'>
+		<header
+			className='flex justify-between items-center py-3 sm:py-5 px-1 
+		sm:px-8 md:px-16  lg:px-32'>
 			<Link
 				href='/'
 				className='flex gap-2 '>
@@ -18,14 +20,14 @@ const Header: React.FC<HeaderProps> = () => {
 				/>
 				<span
 					className='text-gray-900 text-[8px] sm:text-xl 
-				not-italic font-medium leading-6 tracking-tighter'>
+				not-italic font-medium leading-[120%] -tracking-[0.050em]'>
 					LearnLingo
 				</span>
 			</Link>
 
 			<div
 				className=' flex gap-2 sm:gap-7 text-gray-900 text-[8px] sm:text-base 
-			not-italic font-normal leading-5'>
+			not-italic font-normal leading-[125%]'>
 				<Link href='/'>Home</Link>
 				<Link href='/teachers'>Teachers</Link>
 			</div>
@@ -33,7 +35,7 @@ const Header: React.FC<HeaderProps> = () => {
 			<div className='flex gap-2 sm:gap-4 items-center'>
 				<button
 					className='flex gap-1 sm:gap-2 text-gray-900 text-[8px] sm:text-base 
-				not-italic font-bold leading-5'>
+				not-italic font-bold leading-[125%]'>
 					<Image
 						src='/login.svg'
 						alt='log in'
@@ -43,13 +45,13 @@ const Header: React.FC<HeaderProps> = () => {
 					Log in
 				</button>
 				<button
-					className='rounded-xl bg-black hover:bg-gray-600 transition-all 
+					className='rounded-xl bg-full-black hover:bg-hover-black hover:cursor-pointer transition-all 
 					duration-300 ease-in-out py-1 sm:py-3.5 px-2 sm:px-10 
-				text-white text-[8px] sm:text-base not-italic font-bold leading-5'>
+				text-white text-[8px] sm:text-base not-italic font-bold leading-[125%]'>
 					Registration
 				</button>
 			</div>
-		</div>
+		</header>
 	);
 };
 export default Header;
