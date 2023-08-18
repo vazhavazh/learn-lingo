@@ -9,9 +9,9 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<main className='px-16 border-2 border-red-500'>
+			<main className='px-16'>
 				<div className='border-2 border-yellow-500 flex gap-6'>
-					<div className='pt-[92px] pr-[108px] pb-[101px] pl-[64px] bg-gray-100 rounded-[30px] max-w-[720px] flex-shrink '>
+					<div className='py-6 lg:py-24 pr-[27px] lg:pr-[108px] pl-[16px] lg:pl-[64px] bg-gray-100 rounded-[30px] max-w-[720px] flex-1 '>
 						<h1
 							className='text-gray-900 text-5xl not-italic font-medium leading-[116.667%] 
 						-tracking-[0.02em] mb-[38px]'>
@@ -40,9 +40,8 @@ export default function Home() {
 					</div>
 					<div
 						className='bg-hero-bg    rounded-[30px] relative flex justify-center
-						items-center  min-w-[568px] flex-1'>
-						<div
-						>
+						items-center    flex-1'>
+						<div>
 							<Image
 								src='/hero.png'
 								alt='hero'
