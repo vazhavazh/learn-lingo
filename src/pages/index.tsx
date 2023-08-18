@@ -1,13 +1,17 @@
 import Header from "@/components/Header/Header";
+import AppleIcon from "@/components/UI/Icon/AppleIcon";
 import Image from "next/legacy/image";
-
+import config from "../../tailwind.config";
 export default function Home() {
+	const heroBG = config.theme?.extend?.colors["hero-bg"];
+	const secondIconColor = config.theme?.extend?.colors["second-icon-color"];
+
 	return (
 		<>
 			<Header />
 			<main className='px-16 border-2 border-red-500'>
 				<div className='border-2 border-yellow-500 flex gap-6'>
-					<div className='pt-[92px] pr-[108px] pb-[101px] pl-[64px] bg-gray-100 rounded-[30px] w-[55.9%]'>
+					<div className='pt-[92px] pr-[108px] pb-[101px] pl-[64px] bg-gray-100 rounded-[30px] max-w-[720px] flex-shrink '>
 						<h1
 							className='text-gray-900 text-5xl not-italic font-medium leading-[116.667%] 
 						-tracking-[0.02em] mb-[38px]'>
@@ -34,10 +38,11 @@ export default function Home() {
 							Get started
 						</button>
 					</div>
-					<div className='bg-hero-bg min-h-full w-[44%]  rounded-[30px] relative'>
+					<div
+						className='bg-hero-bg    rounded-[30px] relative flex justify-center
+						items-center  min-w-[568px] flex-1'>
 						<div
-							className='bg-red-500 absolute left-[50%] top-[50%] 
-            translate-x-[-50%] translate-y-[-50%]'>
+						>
 							<Image
 								src='/hero.png'
 								alt='hero'
@@ -46,12 +51,14 @@ export default function Home() {
 							/>
 						</div>
 						<div
-							className='absolute 
-							w-[64%]
-							min-h-[33%]
-							rounded-t  left-[50%] 
+							className='absolute w-[64%] h-[33%] rounded-t  left-[50%] 
             translate-x-[-50%] bg-gradient-to-b from-gradient-color-1 
-						to-gradient-color-2 bottom-0'></div>
+						to-gradient-color-2 bottom-0 flex items-center justify-center'>
+							<AppleIcon
+								firstGradient={heroBG}
+								secondGradient={secondIconColor}
+							/>
+						</div>
 					</div>
 				</div>
 			</main>

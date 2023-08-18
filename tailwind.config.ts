@@ -1,6 +1,21 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+
+
+interface ExtendedColors {
+  "full-black": string;
+  "hover-black": string;
+  "hero-bg": string;
+  "hero-btn": string;
+  "hero-btn-hover": string;
+  "gradient-color-1": string;
+  "gradient-color-2": string;
+  "second-icon-color": string;
+}
+
+
+
+const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,9 +32,14 @@ const config: Config = {
 				"hero-btn-hover": "#FFDC86",
 				"gradient-color-1": "#EEB055",
 				"gradient-color-2": "#D08F38",
+				"second-icon-color": "#E7C885",
 			},
 		},
 	},
 	plugins: [],
 };
+
+
+
+
 export default config;
