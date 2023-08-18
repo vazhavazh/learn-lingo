@@ -15,6 +15,8 @@ const config: Config = {
 				"hero-bg": "#FBE9BA",
 				"hero-btn": "#F4C550",
 				"hero-btn-hover": "#FFDC86",
+				"gradient-color-1": "#EEB055",
+				"gradient-color-2": "#D08F38",
 			},
 		},
 	},

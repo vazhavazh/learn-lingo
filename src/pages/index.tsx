@@ -50,8 +50,8 @@ export default function Home() {
 							w-[64%]
 							min-h-[33%]
 							rounded-t  left-[50%] 
-            translate-x-[-50%] bg-gradient-to-b from-yellow-400 
-						to-yellow-600 bottom-0'></div>
+            translate-x-[-50%] bg-gradient-to-b from-gradient-color-1 
+						to-gradient-color-2 bottom-0'></div>
 					</div>
 				</div>
 			</main>
