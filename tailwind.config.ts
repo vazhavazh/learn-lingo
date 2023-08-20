@@ -32,6 +32,9 @@ const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
                 'second-icon-color': '#E7C885',
                 'stats-color': 'rgba(18, 20, 23, 0.70)',
             },
+            screens: {
+                'm680': '680px',
+            },
         },
     },
     plugins: [],
