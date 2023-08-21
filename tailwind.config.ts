@@ -33,7 +33,13 @@ const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
                 'stats-color': 'rgba(18, 20, 23, 0.70)',
             },
             screens: {
-                'm680': '680px',
+                m680: '680px',
+                m420: '420px',
+                m520: '520px',
+                m600: '600px',
+                desktop1160: '1160px',
+                tablet784px: '784px',
+
             },
         },
     },
