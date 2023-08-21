@@ -17,7 +17,8 @@ const Hero: React.FC<HeroProps> = () => {
                 >
                     Unlock your potential with the best{' '}
                     <span
-                        className="text-gray-900 bg-hero-bg text-[12px] min-[394px]:text-xl m680:text-3xl md:text-5xl italic font-normal 
+                        className="text-gray-900 bg-hero-bg text-[12px] min-[394px]:text-xl 
+                        m680:text-3xl md:text-5xl italic font-normal 
 							leading-[116.667%] -tracking-[0.02em]"
                     >
                         language
@@ -25,7 +26,8 @@ const Hero: React.FC<HeroProps> = () => {
                     tutors
                 </h1>
                 <p
-                    className="text-gray-900 text-[10px] min-[448px]:text-sm m680:text-base  not-italic font-normal leading-[137.5%] 
+                    className="text-gray-900 text-[10px] min-[448px]:text-sm m680:text-base  
+                    not-italic font-normal leading-[137.5%] 
 						-tracking-[0.07em] mb-4 md:mb-[64px]"
                 >
                     Embark on an Exciting Language Journey with Expert Language
@@ -43,7 +45,8 @@ const Hero: React.FC<HeroProps> = () => {
             </div>
 
             <div
-                className="bg-hero-bg   rounded-[30px] flex flex-col items-center justify-end px-4  
+                className="bg-hero-bg   rounded-[30px] flex flex-col 
+                items-center justify-end px-4  
             desktop1160:px-[104px] flex-shrink flex-1 max-w-[568px] overflow-hidden"
             >
                 <div className="">

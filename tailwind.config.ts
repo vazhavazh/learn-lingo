@@ -32,6 +32,7 @@ const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
                 'second-icon-color': '#E7C885',
                 'stats-color': 'rgba(18, 20, 23, 0.70)',
             },
+
             screens: {
                 m680: '680px',
                 m420: '420px',
@@ -39,7 +40,6 @@ const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
                 m600: '600px',
                 desktop1160: '1160px',
                 tablet784px: '784px',
-
             },
         },
     },
