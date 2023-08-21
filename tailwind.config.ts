@@ -10,6 +10,7 @@ interface ExtendedColors {
     'gradient-color-2': string
     'second-icon-color': string
     'stats-color': string
+    'select-gray': string
 }
 
 const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
@@ -31,6 +32,7 @@ const config: Config & { theme: { extend: { colors: ExtendedColors } } } = {
                 'gradient-color-2': '#D08F38',
                 'second-icon-color': '#E7C885',
                 'stats-color': 'rgba(18, 20, 23, 0.70)',
+                'select-gray': 'rgba(18, 20, 23, 0.20)',
             },
 
             screens: {

@@ -2,6 +2,7 @@ import React from 'react'
 import AppleIcon from '@/components/UI/Icon/AppleIcon'
 import Image from 'next/legacy/image'
 import config from '../../../tailwind.config'
+import Link from 'next/link'
 type HeroProps = {}
 
 const Hero: React.FC<HeroProps> = () => {
@@ -34,14 +35,15 @@ const Hero: React.FC<HeroProps> = () => {
                     Tutors: Elevate your language proficiency to new heights by
                     connecting with highly qualified and experienced tutors.
                 </p>
-                <button
+                <Link
+                    href="/teachers"
                     className="flex justify-center items-center py-1 min-[480px]:py-4 px-8  m680:px-[88px]
 						text-gray-900 text-sm  min-[394px]:text-lg not-italic font-bold leading-7 bg-hero-btn
 						hover:bg-hero-btn-hover rounded-xl transition-all 
 					duration-300 ease-in-out hv:cursor-pointer"
                 >
                     Get started
-                </button>
+                </Link>
             </div>
 
             <div
